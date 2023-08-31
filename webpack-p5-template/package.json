@@ -1,0 +1,27 @@
+{
+  "name": "node-p5-template",
+  "author": "Michael Sorensen",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.3",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/register": "^7.0.0",
+    "@webpack-cli/serve": "^2.0.5",
+    "babel-loader": "^8.0.5",
+    "html-webpack-plugin": "^5.5.3",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^4.3.0",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "scripts": {
+    "dev": "webpack-dev-server --mode=development --config webpack.config.js",
+    "build": "webpack --mode=production -p --config webpack.config.js"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.2.5",
+    "css-loader": "^2.1.0",
+    "p5": "^1.7.0",
+    "style-loader": "^0.23.1"
+  }
+}
