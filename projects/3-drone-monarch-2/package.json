@@ -1,0 +1,11 @@
+{
+  "name": "@rcnj-musi-620/3-drone-monarch-2",
+  "author": "Michael Sorensen",
+  "license": "MIT",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "webpack-dev-server --mode=development --config webpack.config.js",
+    "build": "webpack --mode=production -p --config webpack.config.js"
+  },
+  "dependencies": {}
+}
