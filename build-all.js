@@ -10,14 +10,16 @@ const indexPath = `${__dirname}/index`;
 const buildAndCopy = (cmd, cwd, copySrc, copyDest) => {
 
   // Build
-  exec(cmd, { cwd }, (err, stdout, stderr) => {
+  exec(cmd, {
+    cwd
+  }, (err, stdout, stderr) => {
     if (err) {
+      // node couldn't execute the command
       console.err('Could not build: ', cwd, err);
     }
     if (stderr) {
       console.log('stderr: ', stderr);
     }
-    console.log(`Build successful for ${cwd}`);
   });
 
   // Copy
@@ -55,6 +57,5 @@ if (process.argv.includes('--server')) {
     if (stderr) {
       console.log('stderr: ', stderr);
     }
-    console.log('HTTP server started at http://localhost:8080');
   });
 }
