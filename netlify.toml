@@ -1,3 +1,4 @@
-base = '/'
-publish = '/build'
-command = 'yarn build-all'
+[build]
+  base = '/'
+  publish = '/build'
+  command = 'yarn build-all'
