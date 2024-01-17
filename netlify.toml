@@ -3,4 +3,4 @@ publish = './build'
 command = 'yarn build-all'
 
 [build]
-  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF projects index"
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF ."
