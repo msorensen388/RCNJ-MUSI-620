@@ -24,11 +24,12 @@ const buildAndCopy = (cmd, cwd, copySrc, copyDest) => {
 
   // Copy
   fs.cpSync(copySrc, copyDest, {recursive: true});
+
 };
 
 
 // 1. build projects no matter what
-fs.rmSync(buildPath, { recursive: true, force: true });
+// fs.rmSync(buildPath, { recursive: true, force: true });
 
 const projects = fs.readdirSync(projectsPath);
 

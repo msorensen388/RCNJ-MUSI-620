@@ -2,18 +2,17 @@ import './App.scss';
 
 function App() {
 
-
-  // console.log(process.env.REACT_APP_LINKS)
   const links = JSON.parse(process.env.REACT_APP_LINKS || {});
 
-  const linkList = <ul>{links.map((link) => {
-    console.log(link)
-    return (
-      <li>
-        <a href={link.path}>{link.name}</a>
-      </li>
-    )
-  })}</ul>;
+  const linkList =
+    <ul>
+      {links.map((link) => (
+        <li>
+          <a href={link.path}>{link.name}</a>
+        </li>
+      ))}
+    </ul>;
+
   return (
     <main>
       <div className='container'>
